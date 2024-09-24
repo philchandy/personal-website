@@ -19,7 +19,7 @@ export const ContactSection = () => {
                 <div className="">
                   <h2 className="font-serif text-2xl md:text-3xl">Let's Create Something Amazing</h2>
                   <p className=" text-sm mt-2 md:text-base">
-                    Feel free to reach out if you’re ready to bring your ideas to life or if you have any other inquiries. I’d love to collaborate and help make your vision a reality!
+                    Feel free to reach out if you&apos;re ready to bring your ideas to life or if you have any other inquiries. I&apos;d love to collaborate and help make your vision a reality!
                   </p>
                 </div>
                 <div className="">

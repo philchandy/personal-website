@@ -82,7 +82,7 @@ export const HeroSection = () => {
           Building Innovative Software Solutions
           </h1>
         <p className="mt-4 text-center text-white/60 md:text-lg">
-          I build all kinds of software—whether it's for the web, mobile, or desktop. I love turning ideas into smooth, powerful apps that people enjoy using.
+          I build all kinds of software—whether it&apos;s for the web, mobile, or desktop. I love turning ideas into smooth, powerful apps that people enjoy using.
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-center mt-8 gap-4 sm:px-16">
