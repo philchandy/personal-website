@@ -98,7 +98,7 @@ export const HeroSection = () => {
           onClick={() => document.getElementById('contact')!.scrollIntoView({ behavior: 'smooth' })}
         >
           <span>👋</span>
-          <span className="font-semibold">Lets Connect</span>
+          <span className="font-semibold">Let&apos;s Connect</span>
         </button>
       </div>
     </div>
