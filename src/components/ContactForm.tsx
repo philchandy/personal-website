@@ -14,11 +14,11 @@ export const ContactForm = () => {
   const [loading, setLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     setLoading(true);
 
