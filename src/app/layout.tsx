@@ -4,7 +4,7 @@ import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Phillip Chandy",
   description: "Still in development.",
 };
 

@@ -7,14 +7,25 @@ import { ContactSection } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
 
 export default function Home() {
+
+  
+
   return (
-    <div>
+    <div className="scroll-smooth" style ={{ scrollBehavior:'smooth' }}>
       <Header />
-      <HeroSection />
-      <ProjectsSection />
+      <section id="home">
+        <HeroSection />
+      </section>
+      <section id="projects">
+        <ProjectsSection />
+      </section>
       <LanguageSection />
-      <AboutSection />
-      <ContactSection />
+      <section id="about">
+        <AboutSection />
+      </section>
+      <section id="contact">
+        <ContactSection />
+      </section>
       <Footer />
     </div>
   );

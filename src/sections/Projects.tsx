@@ -1,6 +1,6 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import currentAffairs from "@/assets/images/currentAffairs (1).png";
+import spotifyCH from "@/assets/images/spotify-ch-mac (1).png";
+import stegsafe from "@/assets/images/stegsafe.png";
 import Image from "next/image";
 import CheckIcon from '@/assets/icons/check-circle.svg'
 import ArrowUpRight from '@/assets/icons/arrow-up-right.svg'
@@ -9,40 +9,37 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Company Z",
     year: "2024",
-    title: "Landing Page",
+    title: "Clone Hero Sync",
     results: [
-      { title: "Example" },
-      { title: "Example" },
-      { title: "Example" },
+      { title: "Web Application for the popular game Clone Hero that checks your spotify playlists to see if you have songs that you can play on Clone Hero" },
+      { title: "React, Expressjs, Nodejs" },
+      { title: "Still in Development" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "http://ec2-18-222-149-241.us-east-2.compute.amazonaws.com/",
+    image: spotifyCH,
   },
   {
-    company: "Company Y",
-    year: "2024",
-    title: "Landing Page",
+    year: "2023",
+    title: "StegSafe",
     results: [
-      { title: "Example" },
-      { title: "Example" },
-      { title: "Example" },
+      { title: "Steganography web Application that hides text in pictures using LSB algorithm" },
+      { title: "Introduces users to Cryptography" },
+      { title: "Vue, Flask" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "http://18.119.13.211",
+    image: stegsafe,
   },
   {
-    company: "Company X",
-    year: "2024",
-    title: "Landing Page",
+    year: "2023-",
+    title: "Current Affairs Tracker",
     results: [
-      { title: "Example" },
-      { title: "Example" },
-      { title: "Example" },
+      { title: "Tracks the magnitude of current events by correlating its popularity and real-world statistics" },
+      { title: "Shows users how some events may have very detrimental effects in the real world but little media coverage" },
+      { title: "Still in Development" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://github.com/philchandy/CurrentAffairsTracker",
+    image: currentAffairs,
   },
 ];
 
@@ -73,8 +70,6 @@ export const ProjectsSection = () => {
                 <div className="bg-gradient-to-r from-emerald-300 to-sky-400 
                 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent
                 bg-clip-text">
-                  <span>{project.company}</span>
-                  <span>&bull;</span>
                   <span>{project.year}</span>
                 </div>
                 <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">
@@ -91,7 +86,7 @@ export const ProjectsSection = () => {
                 </ul>
                 <a href={project.link}>
                   <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6">
-                    <span>View Live Site</span>
+                    <span>View</span>
                     <ArrowUpRight className='size-4' />
                   </button>
                 </a>

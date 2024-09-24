@@ -3,15 +3,27 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from '@/components/Card'
 import StarIcon from '@/assets/icons/star.svg'
 import BookImage from '@/assets/images/book-cover.png'
+
+
 import JavascriptIcon from '@/assets/icons/square-js.svg'
-import PythonIcon from '@/assets/icons/chrome.svg'
+import PythonIcon from '@/assets/icons/python.svg'
 import ReactIcon from '@/assets/icons/react.svg'
 import HTMLIcon from '@/assets/icons/html5.svg'
 import CSSIcon from '@/assets/icons/css3.svg'
 import GitIcon from '@/assets/icons/github.svg'
+import ExpressIcon from '@/assets/icons/express.svg'
+import NodeIcon from '@/assets/icons/nodejs.svg'
+import DjangoIcon from '@/assets/icons/django.svg'
+import FlaskIcon from '@/assets/icons/flask.svg'
+import VueIcon from '@/assets/icons/vue.svg'
+import MatlabIcon from '@/assets/icons/matlab.svg'
+import AwsIcon from '@/assets/icons/aws.svg'
+import UbuntuIcon from '@/assets/icons/ubuntu.svg'
+import MySqlIcon from '@/assets/icons/mysql.svg'
+
 import { Span } from "next/dist/trace";
 import { TechIcon } from "@/components/TechIcon";
-import mapImage from '@/assets/images/map.png'
+import mapImage from '@/assets/images/map.jpg'
 import Image from "next/image";
 import smileMemoji from '@/assets/images/memoji-smile.png'
 import { CardHeader } from "@/components/CardHeader";
@@ -34,7 +46,7 @@ const toolboxItems =[
   },
   {
     title:'Vue',
-    iconType:PythonIcon ,
+    iconType:VueIcon ,
   },
   {
     title:'HTML5',
@@ -44,6 +56,43 @@ const toolboxItems =[
     title:'CSS3',
     iconType:CSSIcon ,
   },
+  {
+    title:'Express',
+    iconType:ExpressIcon ,
+  },
+  {
+    title:'Nodejs',
+    iconType:NodeIcon ,
+  },
+  {
+    title:'Django',
+    iconType:DjangoIcon ,
+  },
+  {
+    title:'Flask',
+    iconType:FlaskIcon ,
+  },
+  {
+    title:'Matlab',
+    iconType:MatlabIcon ,
+  },
+  {
+    title:'AWS EC2',
+    iconType:AwsIcon ,
+  },
+  {
+    title:'Git',
+    iconType:GitIcon ,
+  },
+  {
+    title:'Ubuntu',
+    iconType:UbuntuIcon ,
+  },
+  {
+    title:'MySQL',
+    iconType:MySqlIcon ,
+  },
+
 ];
 
 const hobbies = [
@@ -100,7 +149,9 @@ export const AboutSection = () => {
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader title="My Reads" description="Explore the books shaping my perspectives." />
               <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={BookImage} alt='Book Cover' />
+                <a href="http://ec2-3-137-151-250.us-east-2.compute.amazonaws.com/" target="_blank" rel="noopener noreferrer">
+                  <Image src={BookImage} alt='Book Cover' />
+                </a>
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">

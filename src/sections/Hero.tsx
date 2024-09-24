@@ -1,3 +1,5 @@
+"use client"
+
 import memojiImage from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
@@ -15,8 +17,7 @@ export const HeroSection = () => {
         style={{
           backgroundImage: `url(${grainImage.src}) `,
         }}
-      >
-      </div>
+      ></div>
       <div className="size-[620px] hero-ring"></div>
       <div className="size-[820px] hero-ring"></div>
       <div className="size-[1020px] hero-ring"></div>
@@ -78,18 +79,24 @@ export const HeroSection = () => {
       </div>
       <div className="max-w-lg mx-auto">
         <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-          Building Exceptional User Experiences
+          Building Innovative Software Solutions
           </h1>
         <p className="mt-4 text-center text-white/60 md:text-lg">
-          I specialize in transforming designs into functional, high-performing web applications. Let's discuss your next project.
+          I build all kinds of software—whether it's for the web, mobile, or desktop. I love turning ideas into smooth, powerful apps that people enjoy using.
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-center mt-8 gap-4 sm:px-16">
-        <button className="inline-flex justify-center items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+        <button 
+          className="inline-flex justify-center items-center gap-2 border border-white/15 px-6 h-12 rounded-xl relative z-10"
+          onClick={() => document.getElementById('projects')!.scrollIntoView({ behavior: 'smooth' })}
+        >
           <ArrowDown className="size-4"/>
           <span className="font-semibold">Explore My Work</span>
         </button>
-        <button className="inline-flex justify-center items-center gap-2 border border-white/15 bg-white text-gray-900 h-12 px-6 rounded-xl">
+        <button 
+          className="inline-flex justify-center items-center gap-2 border border-white/15 bg-white text-gray-900 h-12 px-6 rounded-xl relative z-10"
+          onClick={() => document.getElementById('contact')!.scrollIntoView({ behavior: 'smooth' })}
+        >
           <span>👋</span>
           <span className="font-semibold">Lets Connect</span>
         </button>
