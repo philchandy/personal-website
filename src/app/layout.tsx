@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Inter, Calistoga} from 'next/font/google'
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Phillip Chandy",
@@ -32,7 +33,10 @@ export default function RootLayout({
           calistoga.variable, 
           "bg-gray-900 text-white antialiased font-sans"
           )
-        }>{children}</body>
+        }>
+          {children}
+          <Analytics />
+        </body>
     </html>
   );
 }
