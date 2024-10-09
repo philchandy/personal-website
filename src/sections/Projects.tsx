@@ -4,7 +4,6 @@ import stegsafe from "@/assets/images/stegsafe.png";
 import Image from "next/image";
 import CheckIcon from '@/assets/icons/check-circle.svg'
 import ArrowUpRight from '@/assets/icons/arrow-up-right.svg'
-import GrainImage from '@/assets/images/grain.jpg'
 import { Card } from "@/components/Card";
 
 const portfolioProjects = [
@@ -31,14 +30,14 @@ const portfolioProjects = [
     image: stegsafe,
   },
   {
-    year: "2023-",
+    year: "2024",
     title: "Current Affairs Tracker",
     results: [
       { title: "Tracks the magnitude of current events by correlating its popularity and real-world statistics" },
       { title: "Shows users how some events may have very detrimental effects in the real world but little media coverage" },
       { title: "Still in Development" },
     ],
-    link: "https://github.com/philchandy/CurrentAffairsTracker",
+    link: "https://current-affairs-tracker.vercel.app",
     image: currentAffairs,
   },
 ];
